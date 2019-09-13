@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./callback_exercises.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+
+if (this.seconds < 10) {
+          printSec = `0${this.seconds}`;
+        } else if (this.seconds === 60) {
+          printSec = `00`;
+          this.seconds = 0;
+          this.minutes += 1;
+        } else {
+          printSec = `${this.seconds}`;
+        }
+
+        // update minutes
+        if (this.minutes < 10) {
+          printMin = `0${this.minutes}`;
+        } else if (this.minutes === 60) {
+          printMin = `00`;
+          this.minutes = 0;
+          this.hours += 1;
+        } else {
+          printMin = `${this.minutes}`;
+        }
+
+        // update hours
+        if (this.hours < 10) {
+          printHr = `0${this.hours}`;
+        } else if (this.hours === 24) {
+          printHr = `00`;
+          this.hours = 0;
+          this.minutes = 0;
+          this.seconds = 0;
+        } else {
+          printHr = `${this.hours}`;
+        }

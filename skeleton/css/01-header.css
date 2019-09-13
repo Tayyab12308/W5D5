@@ -47,3 +47,28 @@ body {
 .header-list > li:hover {
   background: #000;
 }
+
+.content-header {
+  height: 200px;
+  width: 100%;
+  background-size: 100%;
+  background-image: url('/Users/aa/Desktop/W5D5/skeleton/images/cats.jpg');
+  position: relative;
+}
+
+.content-header p {
+  position: absolute;
+  margin: 0 auto;
+  margin: 160px;
+  font-size: 35px;
+  font-weight: 20px;
+  color: white ; 
+}
+
+.content-header button {
+  position: relative; 
+  margin-left: 790px;
+  margin-top: 160px;
+  border: 1px solid black;
+  padding: 5px;
+}
